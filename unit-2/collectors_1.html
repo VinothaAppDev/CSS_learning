@@ -32,3 +32,42 @@
   </article>
 </body>
 </html>
+
+<!-- 
+CSS Descendant Selectors — Key Points
+--------------------------------------
+
+Descendant Selector Syntax:
+---------------------------
+
+Written as ancestor descendant with space between, it selects elements inside the specified ancestor(s).
+
+Example: article p { } targets all <p> elements inside an <article>.
+
+Specificity Hierarchy & Overriding:
+-----------------------------------
+
+article p { color: green; } colors all paragraphs inside an article green.
+
+article section p { color: pink; } targets paragraphs inside a <section> within an <article> and overrides color to pink because it’s more specific.
+
+.container p { color: orange; } targets paragraphs inside any element with class container regardless of parent elements, also overriding colors if more specific or equal specificity applied later.
+
+How It Applies to Your HTML:
+---------------------------
+
+The <p> directly inside <article> (e.g., "title of the article" and "another paragraph") are green via article p.
+
+The <p> inside <section class="container"> is affected by both article section p and .container p. The last declared rule .container p makes it orange because it overrides previous colors based on specificity and declaration order.
+
+Practical Use:
+--------------
+
+Descendant selectors allow precise targeting nested elements.
+
+Class selectors like .container p control style within specific containers.
+
+Order and specificity determine which styles are ultimately applied.
+
+
+-->
