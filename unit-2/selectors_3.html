@@ -25,3 +25,40 @@
   <h2 class="head">Header line 2</h2>
 </body>
 </html>
+
+<!-- 
+CSS Element-Class Combined Selectors — Key Points
+-------------------------------------------------
+
+Class Selector (.head):
+-----------------------
+
+Applies styles to all elements with the class head.
+
+Example: .head { color: blueviolet; } makes the text color blueviolet for any element having class head.
+
+Element-Class Selector (h2.head):
+---------------------------------
+
+Targets only <h2> elements that have the class head.
+
+Syntax combines the element and class: element.class without space.
+
+More specific than just .head, so it overrides common properties for those <h2> elements.
+
+Specificity and Application:
+----------------------------
+
+The general .head styles color all elements with that class blueviolet.
+
+The combined h2.head selector overrides the color to tomato and adds a border, but only for <h2> elements.
+
+Other elements with .head class (like <p>) keep the blueviolet color and do not get the border.
+
+Use Case:
+---------
+
+Use combined selectors to style specific element types differently even if they share the same class.
+
+This allows better control and avoids repeating styles.
+-->
