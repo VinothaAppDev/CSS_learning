@@ -25,3 +25,38 @@
   <h1 class="special highlighted">both</h1>
 </body>
 </html>
+
+
+<!--
+CSS Multiple Class Selectors — Key Points
+-----------------------------------------
+
+Class Selector Basics: 
+----------------------
+Use a dot (.) followed by the class name to select elements with that class. Example: .special { } targets elements with class="special".
+
+Multiple Classes on an Element: An HTML element can have multiple classes separated by spaces. Example: <h1 class="special highlighted">.
+
+Selecting Elements with Multiple Classes: Chain class selectors without spaces to apply styles only when the element has all those classes simultaneously.
+Example: .highlighted.special { } targets elements with both highlighted and special classes.
+
+Specificity and Overrides:
+-------------------------
+Styles for .special will apply to all with that class.
+
+Styles for .highlighted apply similarly.
+
+When an element has both classes, .highlighted.special overrides common properties due to higher specificity.
+
+Your Example Explained:
+----------------------
+.special makes text italic and underlined.
+
+.highlighted changes text color to brown.
+
+.highlighted.special (both classes) changes color to pink, overriding .highlighted.
+
+Practical Use: 
+--------------
+Multiple class selectors help reuse shared styles and override specific properties for combined states without duplicating code.
+-->
