@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    section{
+      color: blue;
+    }
+    p:nth-child(3){
+      color: brown;
+    }
+  </style>
+
+</head>
+<body>
+  <section>
+    <h1>label</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores praesentium exercitationem soluta molestiae iusto, quae repudiandae obcaecati nisi dolore enim id voluptatem repellendus libero possimus sequi tenetur molestias similique.</p>
+    <p>hey, <a href="#">bye bye</a></p>
+  </section>
+</body>
+</html>
+
+<!-- 
+Here are short and clear notes for your CSS code using element and pseudo-class selectors:
+
+***
+
+### CSS Element and `:nth-child` Pseudo-class
+
+- `section { color: blue; }`  
+  - Colors all text inside `<section>` blue.
+
+- `p:nth-child(3) { color: brown; }`  
+  - Selects the `<p>` that is the 3rd child of its parent.  
+  - Here, it colors the second `<p>` inside `<section>` brown because it is the third child of `<section>` (after the `<h1>` and first `<p>`).
+
+- Use `:nth-child(n)` to style elements based on their position within parent.
+
+***
+
+This explanation highlights the key usage of pseudo-class `:nth-child` and element styling together.
+
+why the a tag haven;t inherited its parent style
+------------------------------------------------
+
+The reason the <a> tag hasn’t inherited its parent’s style (like color) is because some CSS properties are not automatically inherited by certain elements such as links.
+
+Browsers apply default styles to anchor tags (<a>)—usually a blue color and underline—which override the parent’s styles unless explicitly overridden. This is why the link may appear in its default style, ignoring the parent's color.
+
+To make an anchor inherit the parent's color, you can explicitly set:
+
+css
+a {
+  color: inherit;
+  text-decoration: inherit; /* or none */
+}
+Key points:
+
+CSS inheritance applies only to inheritable properties.
+
+Links have default browser styles that take precedence unless overridden.
+
+Use color: inherit; on the <a> tag to force inheritance from the parent.
+
+Other properties like font-family, color, and line-height are inherited by default, but text-decoration is usually not.
+
+This explains why <a> tags often need explicit styling to inherit parent styles.​​
+-->
