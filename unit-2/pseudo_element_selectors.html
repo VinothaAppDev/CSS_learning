@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    p::first-letter{
+      font-style: bold;
+      font-size: 30px;
+      color: rgb(255, 0, 0);
+    }
+    p::selection{
+      font-style: bold;
+      font-size: 30px;
+      color: rgb(255, 0, 0);
+    }
+  </style>
+
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea repellendus veritatis aut beatae exercitationem quasi reiciendis aperiam aspernatur facilis? Laborum voluptatibus rerum perspiciatis ab dolorum ipsam molestias soluta qui.</p>
+</body>
+</html>
+
+
+<!-- 
+
+CSS pseudo-element selectors target and style specific parts of an element, like the first letter or line, or insert content before or after the element’s actual content.
+
+- Syntax uses a double colon `::` followed by the pseudo-element name, e.g., `element::first-letter { }`
+- Common pseudo-elements:
+  - `::first-letter` — styles the first letter of an element
+  - `::first-line` — styles the first line of text
+  - `::before` — inserts content before the element content
+  - `::after` — inserts content after the element content
+  - `::marker` — styles list item markers
+  - `::selection` — styles text selected by the user
+
+Example:
+```css
+p::first-letter {
+  color: red;
+  font-size: 2em;
+}
+h1::after {
+  content: " - New";
+  color: orange;
+}
+```
+
+Pseudo-elements enhance styling control by allowing targeting of element parts without extra HTML markup.
+
+-->
