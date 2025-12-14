@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* longhand 
+    ----------------------------------------*/
+    /* *{
+      background-color: yellowgreen;
+      background-image: url(../getting_started/portfolio.png);
+      background-repeat: no-repeat;
+      background-position: top;
+    } */
+
+    /* shorthand 
+    ----------------------------------------*/
+    /* *{
+      background:  url(../getting_started/portfolio.png) no-repeat top bisque;
+    } */
+
+    .background{
+     height: 500px;
+     width: 800px; 
+     border: 5px solid black;
+     /* background-color: orange;
+     background-image: url(image.jpg);
+     background-repeat: no-repeat;
+     background-position: right;
+     background-size: cover; */
+    }
+
+    .background{
+      background: url(image.jpg) no-repeat orange right/cover;
+    }
+    /* in shorthand the values can be in any order
+       but position + size --> come both or position alone */
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+</body>
+</html>

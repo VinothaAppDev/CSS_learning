@@ -1,12 +1,48 @@
+/* Custom Properties 
+----------------------------------------------*/
+:root{
+  --shadow-grey: #2f2e38ff;
+  --dust-grey: #e2dadbff;
+  --royal-plum: #762e66ff;
+  --petal-pink: #b979abff;
+  --cream: #f7fccfff;
+  --color-dark: var(--shadow-grey);
+  --color-light: var(--cream);
+  --accent-color: var(--royal-plum);
+}
+
 /* Global Styles 
 ----------------------------------------------*/
-body{
-  background-color: yellowgreen;
+a{
+  color: var(--color-dark);
+}
+.color-dark a, .color-primary a{
+  color: var(--color-light);
+}
+.color-dark{
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+.color-light{
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+.color-primary{
+  background-color: var(--accent-color);
+  color: var(--color-light);
 }
 
 /* Header + Nav 
 ----------------------------------------------*/
-
+header{
+  height: 500px;
+  background-image: linear-gradient(rgb(185 121 171 / 0.3), 
+                                    rgb(185 121 171 / 0.3)), 
+                    url(../../images/bg-downtown-toronto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-light);
+}
 
 /* About 
 ----------------------------------------------*/
