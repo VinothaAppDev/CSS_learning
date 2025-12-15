@@ -31,6 +31,10 @@ body{
 a{
   color: var(--color-dark);
 }
+h1, h2, h3, h4{
+  margin: 0;
+  padding: 0;
+}
 .color-dark a, .color-primary a{
   color: var(--color-light);
 }
@@ -50,6 +54,11 @@ a{
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+.content-wrap{
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px;
 }
 
 /* Header + Nav 
@@ -71,7 +80,11 @@ header{
 
 /* Projects 
 ----------------------------------------------*/
-
+.project-item{
+  border: 1px solid var(--accent-color);
+  padding: 20px;
+  margin-bottom: 10px;
+}
 
 /* Resume 
 ----------------------------------------------*/
