@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div, p{
+      border: 5px solid black;
+      width: 100px;
+      text-align: center;
+    }
+
+    .d1{
+      padding: 25px;      /* applies to all sides*/
+    }
+    .d2{
+      padding: 25px 3px;    /* 1st applies to top & bottom and 2nd applies to left and right*/
+    }
+    .d3{
+      padding: 25px 3px 0px; /* 1st--(top) 2nd-(left & right) 3rd-(bottom)*/
+    }
+    .d4{
+      padding: 25px 3px 0px 50px; /* 1st-(top) 2nd-(left) 3rd-(bottom) 4th-(right) clockwise !! */
+    }
+
+    /* these are shorthand  */
+
+    /* longhand */
+    p{
+      padding-left: 50px;
+      padding-bottom: 90px;
+      padding-right: 2px;
+      padding-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="d1">Table</div>
+  <br>
+  <div class="d2">Table</div>
+  <br>
+  <div class="d3">Table</div>
+  <br>
+  <div class="d4">Table</div>
+  <br>
+  <p>hello</p>
+</body>
+</html>
+
+
+<!-- 
+padding values can be
+
+length or percentage value
+0 can be written with or without units -- not just in padding. This applies to all in css
+
+example
+
+padding: 50px; 
+padding: 2em;
+padding: 1%;
+padding: 0px;
+padding: 0;
+
+-->

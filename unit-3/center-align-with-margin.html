@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    section:nth-child(1){
+      background-color: lightblue;
+      padding: 10px 30px;
+      border: 4px solid black;
+      width: 400px;
+      margin: 10px auto;
+    }
+
+
+    section:nth-child(2){
+      background: burlywood;
+      border: 4px solid black;
+    }
+    .wrapper{
+      padding: 10px 30px;
+      width: 400px;
+      border: 4px solid black;
+      margin: 0 auto;
+      /* 
+      In CSS, margin: auto was mainly designed for horizontal centering, not vertical centering, so it often “does nothing” vertically in normal document flow.​ */
+    }
+
+    .container{
+      border: 4px solid black;
+      height: 500px;
+      margin: 20px;
+    }
+
+    .content{
+      border: 2px solid blue;
+      width: 400px;
+      margin: auto auto;
+      /* In CSS, margin: auto was mainly designed for horizontal centering, not vertical centering, so it often “does nothing” vertically in normal document flow.​ */
+    }
+  </style>
+
+</head>
+<body>
+  <section>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, alias? Sapiente ratione, placeat beatae et odit maxime error, perspiciatis odio ullam soluta quis! Nobis fuga alias, dolorem tempore fugit quas.</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut porro ipsum debitis at alias.
+    </p>
+  </section>
+
+   <section>
+    <div class="wrapper">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, alias? Sapiente ratione, placeat beatae et odit maxime error, perspiciatis odio ullam soluta quis! Nobis fuga alias, dolorem tempore fugit quas.</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut porro ipsum debitis at alias.
+    </p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita quos dolorum illo, veniam reiciendis dolorem impedit. Sint non quaerat reiciendis libero dolorum aut laborum minus, ea qui. Delectus, vitae.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

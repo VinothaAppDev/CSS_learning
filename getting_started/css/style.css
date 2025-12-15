@@ -13,6 +13,21 @@
 
 /* Global Styles 
 ----------------------------------------------*/
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+html,body{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
 a{
   color: var(--color-dark);
 }
@@ -31,15 +46,21 @@ a{
   background-color: var(--accent-color);
   color: var(--color-light);
 }
+.list-reset{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 /* Header + Nav 
 ----------------------------------------------*/
 header{
-  height: 500px;
-  background-image: linear-gradient(rgb(185 121 171 / 0.3), 
-                                    rgb(185 121 171 / 0.3)), 
+  height: 80%;
+  background-image: linear-gradient(rgb(118 46 102 / 0.5), 
+                                    rgb(118 46 102 / 0.5)), 
                     url(../../images/bg-downtown-toronto.jpg);
   background-size: cover;
+  background-position: top right;
   background-repeat: no-repeat;
   color: var(--color-light);
 }
