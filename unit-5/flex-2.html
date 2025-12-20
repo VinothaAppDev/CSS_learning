@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex-container{
+      border: 2px solid black;
+      margin: 5px;
+      display: inline-flex;
+      /* flex-direction: column; */ /*// default value is row */
+      flex-wrap: wrap;
+    }
+    .flex-item{
+      background-color: pink;
+      margin: 3px;
+    }
+    .size{
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <section class="flex-container">
+    <div class="flex-item">box</div>
+    <div class="flex-item">box</div>
+    <div class="flex-item">box</div>
+    <div class="flex-item">box</div>
+  </section>
+  <section class="flex-container size">
+    <div class="flex-item">box</div>
+    <div class="flex-item">box</div>
+    <div class="flex-item">box</div>
+    <div class="flex-item">box</div>
+  </section>
+</body>
+</html>
