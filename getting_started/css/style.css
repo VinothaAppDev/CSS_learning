@@ -74,6 +74,16 @@ header{
   color: var(--color-light);
 }
 
+.nav-list{
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list a{
+  padding: 20px;   /* this padding space also a part of clickable area !!! */
+  display: inline-block; /* to get the top and bottom padding */
+}
+
 /* About 
 ----------------------------------------------*/
 
@@ -92,3 +102,15 @@ header{
 
 /* Footer 
 ----------------------------------------------*/
+footer{
+  padding: 60px;
+  text-align: center;
+}
+.socials-list{
+  display: flex;
+  justify-content: center;
+}
+.socials-list img{
+  width: 35px;
+  margin: 15px;
+}
