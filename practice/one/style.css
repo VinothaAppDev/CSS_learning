@@ -1,0 +1,30 @@
+.body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.thumbnail{
+  display: flex;
+  flex-direction: row;
+}
+
+.thumbnail img{
+  width: 100px;
+  height: 70px;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+.image-display{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.image-display img{
+  width: 200px;
+  height: 170px;
+  border-radius: 10px;
+}

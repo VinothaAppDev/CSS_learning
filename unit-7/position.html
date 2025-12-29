@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+  <style>
+    .wrapper{
+      margin: 10px 100px;
+      border: 2px solid black;
+      padding: 10px;
+      /* position: relative; */
+    }
+    .box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+    }
+    .parent{
+      border: 2px solid brown;
+      /* position: relative; */
+    }
+    .box-relative{
+      background-color: blue;
+      /* position: relative; */
+      /* top: 10px; */
+      /* bottom: 10px; */
+      /* left: 10px; */
+      /* right: 10px; */
+    }
+    .box-absolute{
+      background-color: pink;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      /* z-index: -1; */
+    }
+    .box-fixed{
+      background-color: lightgreen;
+      position: fixed;
+      top: 50%;
+      right: 0;
+    }
+    .box-sticky{
+      background-color: gray;
+      position: sticky;
+      top: 50%;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box box-sticky">sticky</div>
+  <div class="wrapper">
+    <div class="parent">
+      <div class="box box-relative">Relative</div>
+      <div class="box box-absolute">Absolute</div>
+      <div class="box box-fixed">Fixed</div>
+    </div>
+    <div class="box box-sticky">sticky</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde aut delectus asperiores quia sit officia nam cupiditate nobis quidem nihil corporis, error cumque? Iure, exercitationem? Perspiciatis dolores recusandae neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptatum exercitationem odit deleniti quibusdam non ea maxime sed, corrupti fugiat aliquid sint, debitis veniam explicabo quos quis asperiores rerum facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam atque consequuntur exercitationem amet maxime minus, vero doloremque enim impedit praesentium quibusdam pariatur cumque odio deserunt voluptas fugit repudiandae ipsa fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum reiciendis libero perspiciatis eius voluptas ipsum aperiam eos repellendus numquam iste, nulla totam ducimus nesciunt veniam, ut commodi, est quisquam laudantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum tempore aut nobis itaque, aspernatur distinctio cum nam eius, excepturi fugiat sed nihil perspiciatis eos. Quos saepe necessitatibus ex beatae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde aut delectus asperiores quia sit officia nam cupiditate nobis quidem nihil corporis, error cumque? Iure, exercitationem? Perspiciatis dolores recusandae neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptatum exercitationem odit deleniti quibusdam non ea maxime sed, corrupti fugiat aliquid sint, debitis veniam explicabo quos quis asperiores rerum facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam atque consequuntur exercitationem amet maxime minus, vero doloremque enim impedit praesentium quibusdam pariatur cumque odio deserunt voluptas fugit repudiandae ipsa fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum reiciendis libero perspiciatis eius voluptas ipsum aperiam eos repellendus numquam iste, nulla totam ducimus nesciunt veniam, ut commodi, est quisquam laudantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum tempore aut nobis itaque, aspernatur distinctio cum nam eius, excepturi fugiat sed nihil perspiciatis eos. Quos saepe necessitatibus ex beatae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde aut delectus asperiores quia sit officia nam cupiditate nobis quidem nihil corporis, error cumque? Iure, exercitationem? Perspiciatis dolores recusandae neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptatum exercitationem odit deleniti quibusdam non ea maxime sed, corrupti fugiat aliquid sint, debitis veniam explicabo quos quis asperiores rerum facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam atque consequuntur exercitationem amet maxime minus, vero doloremque enim impedit praesentium quibusdam pariatur cumque odio deserunt voluptas fugit repudiandae ipsa fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum reiciendis libero perspiciatis eius voluptas ipsum aperiam eos repellendus numquam iste, nulla totam ducimus nesciunt veniam, ut commodi, est quisquam laudantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum tempore aut nobis itaque, aspernatur distinctio cum nam eius, excepturi fugiat sed nihil perspiciatis eos. Quos saepe necessitatibus ex beatae!</p>
+  </div>
+  <div class="wrapper">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde aut delectus asperiores quia sit officia nam cupiditate nobis quidem nihil corporis, error cumque? Iure, exercitationem? Perspiciatis dolores recusandae neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptatum exercitationem odit deleniti quibusdam non ea maxime sed, corrupti fugiat aliquid sint, debitis veniam explicabo quos quis asperiores rerum facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam atque consequuntur exercitationem amet maxime minus, vero doloremque enim impedit praesentium quibusdam pariatur cumque odio deserunt voluptas fugit repudiandae ipsa fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum reiciendis libero perspiciatis eius voluptas ipsum aperiam eos repellendus numquam iste, nulla totam ducimus nesciunt veniam, ut commodi, est quisquam laudantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum tempore aut nobis itaque, aspernatur distinctio cum nam eius, excepturi fugiat sed nihil perspiciatis eos. Quos saepe necessitatibus ex beatae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde aut delectus asperiores quia sit officia nam cupiditate nobis quidem nihil corporis, error cumque? Iure, exercitationem? Perspiciatis dolores recusandae neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptatum exercitationem odit deleniti quibusdam non ea maxime sed, corrupti fugiat aliquid sint, debitis veniam explicabo quos quis asperiores rerum facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam atque consequuntur exercitationem amet maxime minus, vero doloremque enim impedit praesentium quibusdam pariatur cumque odio deserunt voluptas fugit repudiandae ipsa fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum reiciendis libero perspiciatis eius voluptas ipsum aperiam eos repellendus numquam iste, nulla totam ducimus nesciunt veniam, ut commodi, est quisquam laudantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum tempore aut nobis itaque, aspernatur distinctio cum nam eius, excepturi fugiat sed nihil perspiciatis eos. Quos saepe necessitatibus ex beatae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde aut delectus asperiores quia sit officia nam cupiditate nobis quidem nihil corporis, error cumque? Iure, exercitationem? Perspiciatis dolores recusandae neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptatum exercitationem odit deleniti quibusdam non ea maxime sed, corrupti fugiat aliquid sint, debitis veniam explicabo quos quis asperiores rerum facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam atque consequuntur exercitationem amet maxime minus, vero doloremque enim impedit praesentium quibusdam pariatur cumque odio deserunt voluptas fugit repudiandae ipsa fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum reiciendis libero perspiciatis eius voluptas ipsum aperiam eos repellendus numquam iste, nulla totam ducimus nesciunt veniam, ut commodi, est quisquam laudantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum tempore aut nobis itaque, aspernatur distinctio cum nam eius, excepturi fugiat sed nihil perspiciatis eos. Quos saepe necessitatibus ex beatae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde aut delectus asperiores quia sit officia nam cupiditate nobis quidem nihil corporis, error cumque? Iure, exercitationem? Perspiciatis dolores recusandae neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla voluptatum exercitationem odit deleniti quibusdam non ea maxime sed, corrupti fugiat aliquid sint, debitis veniam explicabo quos quis asperiores rerum facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam atque consequuntur exercitationem amet maxime minus, vero doloremque enim impedit praesentium quibusdam pariatur cumque odio deserunt voluptas fugit repudiandae ipsa fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum reiciendis libero perspiciatis eius voluptas ipsum aperiam eos repellendus numquam iste, nulla totam ducimus nesciunt veniam, ut commodi, est quisquam laudantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum tempore aut nobis itaque, aspernatur distinctio cum nam eius, excepturi fugiat sed nihil perspiciatis eos. Quos saepe necessitatibus ex beatae!</p>
+  </div>
+</body>
+</html>
+
+<!-- 
+
+CSS Position Quick Notes
+static (default): Normal flow
+
+relative: Normal flow + offset from original position
+
+absolute: Out of flow, positioned vs nearest positioned ancestor (needs position: relative on parent)
+
+fixed: Out of flow, positioned vs viewport (stays on scroll)
+
+sticky: Normal flow → sticks when threshold hit (like top: 50px)
+
+Key: position: relative on parent makes it the reference for absolute children.
+
+-->

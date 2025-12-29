@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float</title>
+
+  <style>
+    .container{
+      border: 2px solid black;
+      box-sizing: border-box;
+      /* display: flow-root; */
+    }
+    .container p{
+      background-color: blue;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .img{
+      height: 200px;
+      float: left;
+      margin: 10px;
+    }
+    /* .clear{
+      clear: both;
+    } */
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <img class="img" src="../images/icon-ko-fi.png" alt="A cup image">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, minus! Aliquid voluptate fugit doloribus eligendi assumenda magni veniam perferendis quasi! Tenetur, deserunt ipsum. Quam quaerat architecto voluptas, veritatis nam voluptatem.</p>
+    <!-- <p class="clear">Second paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dignissimos</p>
+    <p>Second paragraph</p> -->
+  </div>
+</body>
+</html>
+
+
+<!-- 
+
+What float is doing
+.img { float: left; } makes the image leave the normal flow and stick to the left inside .container.
+​
+
+The paragraph text flows/wraps around the floated image on the right side.
+​
+
+Effect on the container
+The floated image does not increase the container’s height because floated elements are taken out of normal flow.
+​
+
+If the paragraph were too short, the container’s bottom border might appear to “cut through” the image unless the float is cleared.
+
+How to “fix” the float
+Two common ways:
+
+Add a clearing element after the float:
+.clear { clear: both; } and <p class="clear"></p> to force the container to wrap around the float.
+​
+
+Or use display: flow-root; on .container to create a new block formatting context so the container automatically wraps its floated children.
+​
+
+Other styles
+.container p sets blue background and padding for all <p> inside .container.
+
+box-sizing: border-box; makes padding and border included inside the set width/height, which helps predictable layouts.
+
+-->

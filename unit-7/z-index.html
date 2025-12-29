@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index</title>
+  <style>
+    html{
+      background-color: gray;
+    }
+
+    body{
+      background-color: white;
+      height: 400px;
+    }
+    .b{
+      /* problem 1
+      display: flex;
+      justify-content: center;
+      align-items: center; */
+      box-sizing: border-box;
+      padding: 10px;
+    }
+
+    .block-1{
+      width: 300px;
+      height: 200px;
+      background-color: yellowgreen;
+      position: relative;
+      /* z-index: 1; */
+      z-index: 1;
+    }
+
+    .block-2{
+      width: 300px;
+      height: 200px;
+      background-color: pink;
+      margin: -160px 0 0 80px;
+    }
+
+    .float{
+      background-color: blue;
+      width: 300px;
+      height: 100px;
+      margin: -150px 0 0 100px;
+    }
+
+    .inline{
+      background-color: brown;
+      width: 100px;
+      padding: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .position{
+      background-color: orange;
+      width: 300px;
+      height: 200px;
+      position: relative;
+      top: -170px;
+      left: 200px;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="b block-1">Block 1</div>
+  <div class="b block-2">Block 2</div>
+  <div class="b float">Float
+    <span class="b inline">Inline</span>
+  </div>
+  <div class="b position">Position</div>
+</body>
+</html>
+
+
+<!-- 
+Reason
+
+Text "floats" above the overlapping pink background because browsers render text on a higher stacking layer than block backgrounds by default.
+
+-->
